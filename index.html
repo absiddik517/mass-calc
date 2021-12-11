@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Calculator</div>
+      <div class="panel-body">
+        <div class="peoples_form_container">
+        <form class="peoples_form">
+          <div class="peoples">
+          <div class="people">
+            <div class="form-group">
+              <div class="row">
+                <div class="col-xs-8">
+                  <input type="text" class="name form-control" required name="name[]" placeholder="Jhon Doe">
+                </div>
+                
+                <div class="col-xs-4">
+                  <input class="discount form-control" type="number" placeholder="Discount" name="discount[]">
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <div class="row">
+                 <div class="col-xs-4">
+                    <input type="number" class="joma form-control" placeholder="Joma" required>
+                 </div>
+                 <div class="col-xs-4">
+                    <input type="number" class="meals form-control" placeholder="Meals" required>
+                 </div>
+                 <!-- Buttons -->
+                 <div class="col-xs-4 text-right">
+                   <button class="btn btn-success btn-sm btn-add"><i class="fa fa-plus"></i></button>
+                   <button class="btn btn-danger btn-sm btn-remove"><i class="fa fa-times"></i></button>
+                 </div>
+              </div>
+            </div>
+          </div>
+          </div>
+            
+            <div class="col-auto my-1 text-center">
+              <input type="submit" class="btn btn-primary" value="Next">
+            </div>
+          </form>
+          </div>
+    
+        <div class="cost_form_container">
+            <form class="cost_form">
+               <div class="form-group">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <input type="number" class="fixed_cost form-control" required placeholder="Fixed Cost">
+                  </div>
+                  <div class="col-xs-6">
+                    <input class="meal_cost form-control" type="number" placeholder="Meal Cost">
+                  </div>
+                </div>
+              </div>
+              
+               <div class="col-auto my-1 text-center">
+                  <input type="submit" class="btn btn-primary" value="Submit & Calculator">
+                </div>
+            </form>
+          </div>
+        
+        <!-- table to dislay data--->
+        <div class="table_container table-responsive">
+          <table class="table table-border table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Joma</th>
+                <th>Meal Cost</th>
+                <th>Fixed Cost</th>
+                <th>Account</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

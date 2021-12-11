@@ -1,0 +1,17 @@
+body{
+  padding: 10px;
+}
+
+.people{
+  border-bottom: 1px solid #ddd;
+  padding: 4px;
+}
+.people:last-child{
+  border-bottom: 0px;
+}
+.cost_form_container,
+.table_container{
+  display: none;
+}
+
+
